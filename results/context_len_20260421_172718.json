@@ -1,0 +1,115 @@
+{
+  "experiment": "context_length_comparison",
+  "timestamp": "2026-04-21 17:27:18",
+  "config": {
+    "quantization": "q4_0",
+    "n_gpu_layers": -1,
+    "prompt": "Explain the concept of attention mechanism in neural networks.",
+    "n_predict": 256,
+    "runs_per_config": 5
+  },
+  "results": {
+    "512": {
+      "ctx_len": 512,
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    },
+    "1024": {
+      "ctx_len": 1024,
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    },
+    "2048": {
+      "ctx_len": 2048,
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    }
+  }
+}

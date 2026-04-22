@@ -1,0 +1,135 @@
+{
+  "experiment": "quantization_comparison",
+  "timestamp": "2026-04-21 17:26:49",
+  "config": {
+    "prompt": "Explain the concept of attention mechanism in neural networks.",
+    "n_predict": 256,
+    "n_gpu_layers": -1,
+    "runs_per_quant": 5
+  },
+  "results": {
+    "q4_0": {
+      "quant": "q4_0",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": [
+          1614
+        ],
+        "samples": [
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ]
+        ]
+      },
+      "output_consistency": {
+        "unique_outputs": 1,
+        "total_outputs": 5,
+        "consistency_pct": 20.0,
+        "sample_output": "(dry run — no output)"
+      }
+    },
+    "q8_0": {
+      "quant": "q8_0",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": [
+          1614
+        ],
+        "samples": [
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ]
+        ]
+      },
+      "output_consistency": {
+        "unique_outputs": 1,
+        "total_outputs": 5,
+        "consistency_pct": 20.0,
+        "sample_output": "(dry run — no output)"
+      }
+    },
+    "f16": {
+      "quant": "f16",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": [
+          1614
+        ],
+        "samples": [
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ],
+          [
+            1614
+          ]
+        ]
+      },
+      "output_consistency": {
+        "unique_outputs": 1,
+        "total_outputs": 5,
+        "consistency_pct": 20.0,
+        "sample_output": "(dry run — no output)"
+      }
+    }
+  }
+}

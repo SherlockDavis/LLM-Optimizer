@@ -1,0 +1,70 @@
+{
+  "experiment": "quantization_comparison",
+  "backend": "llama-bench",
+  "timestamp": "2026-04-22 14:57:48",
+  "config": {
+    "n_gen": 128,
+    "n_prompt": 128,
+    "n_gpu_layers": -1,
+    "repetitions": 3
+  },
+  "results": {
+    "q4_0": {
+      "quant": "q4_0",
+      "desc": "4-bit quantized",
+      "repetitions": 3,
+      "pp_tps": 1736.57,
+      "pp_tps_stddev": 64.67,
+      "tg_tps": 57.0,
+      "tg_tps_stddev": 2.12,
+      "wall_time_s": 10.522,
+      "vram_mb": {
+        "peak": 1112,
+        "before": [
+          1098
+        ],
+        "after": [
+          1112
+        ]
+      }
+    },
+    "q8_0": {
+      "quant": "q8_0",
+      "desc": "8-bit quantized",
+      "repetitions": 3,
+      "pp_tps": 127.61,
+      "pp_tps_stddev": 5.26,
+      "tg_tps": 2.89,
+      "tg_tps_stddev": 0.04,
+      "wall_time_s": 162.005,
+      "vram_mb": {
+        "peak": 1112,
+        "before": [
+          1112
+        ],
+        "after": [
+          1006
+        ]
+      }
+    },
+    "f16": {
+      "quant": "f16",
+      "desc": "16-bit float",
+      "repetitions": 3,
+      "pp_tps": null,
+      "pp_tps_stddev": null,
+      "tg_tps": null,
+      "tg_tps_stddev": null,
+      "wall_time_s": 8.375,
+      "vram_mb": {
+        "peak": 1006,
+        "before": [
+          1006
+        ],
+        "after": [
+          943
+        ]
+      }
+    }
+  }
+}

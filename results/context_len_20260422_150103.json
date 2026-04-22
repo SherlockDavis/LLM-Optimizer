@@ -1,0 +1,76 @@
+{
+  "experiment": "context_length_comparison",
+  "backend": "llama-bench",
+  "timestamp": "2026-04-22 15:01:03",
+  "config": {
+    "quantization": "q4_0",
+    "n_gpu_layers": -1,
+    "n_gen": 128,
+    "repetitions": 3
+  },
+  "results": {
+    "512": {
+      "ctx_len": 512,
+      "n_prompt_used": 256,
+      "n_gen": 128,
+      "n_gpu_layers": -1,
+      "repetitions": 3,
+      "pp_tps": 1931.04,
+      "pp_tps_stddev": 19.15,
+      "tg_tps": 62.2,
+      "tg_tps_stddev": 0.49,
+      "wall_time_s": 9.631,
+      "vram_mb": {
+        "peak": 930,
+        "before": [
+          930
+        ],
+        "after": [
+          930
+        ]
+      }
+    },
+    "1024": {
+      "ctx_len": 1024,
+      "n_prompt_used": 512,
+      "n_gen": 128,
+      "n_gpu_layers": -1,
+      "repetitions": 3,
+      "pp_tps": 1809.1,
+      "pp_tps_stddev": 12.16,
+      "tg_tps": 61.82,
+      "tg_tps_stddev": 0.44,
+      "wall_time_s": 10.165,
+      "vram_mb": {
+        "peak": 930,
+        "before": [
+          930
+        ],
+        "after": [
+          930
+        ]
+      }
+    },
+    "2048": {
+      "ctx_len": 2048,
+      "n_prompt_used": 1024,
+      "n_gen": 128,
+      "n_gpu_layers": -1,
+      "repetitions": 3,
+      "pp_tps": 1614.16,
+      "pp_tps_stddev": 44.62,
+      "tg_tps": 60.17,
+      "tg_tps_stddev": 1.42,
+      "wall_time_s": 11.917,
+      "vram_mb": {
+        "peak": 930,
+        "before": [
+          930
+        ],
+        "after": [
+          930
+        ]
+      }
+    }
+  }
+}

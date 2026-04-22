@@ -1,0 +1,94 @@
+{
+  "experiment": "gpu_layers_comparison",
+  "backend": "llama-bench",
+  "timestamp": "2026-04-22 15:00:09",
+  "config": {
+    "quantization": "q4_0",
+    "n_gen": 128,
+    "n_prompt": 128,
+    "ctx_size": 2048,
+    "repetitions": 3
+  },
+  "results": {
+    "0": {
+      "n_gpu_layers": 0,
+      "label": "0",
+      "quant": "q4_0",
+      "repetitions": 3,
+      "pp_tps": 216.61,
+      "pp_tps_stddev": 4.64,
+      "tg_tps": 12.05,
+      "tg_tps_stddev": 0.69,
+      "wall_time_s": 38.614,
+      "vram_mb": {
+        "peak": 932,
+        "before": [
+          906
+        ],
+        "after": [
+          932
+        ]
+      }
+    },
+    "20": {
+      "n_gpu_layers": 20,
+      "label": "20",
+      "quant": "q4_0",
+      "repetitions": 3,
+      "pp_tps": 651.31,
+      "pp_tps_stddev": 24.27,
+      "tg_tps": 26.47,
+      "tg_tps_stddev": 1.81,
+      "wall_time_s": 18.962,
+      "vram_mb": {
+        "peak": 932,
+        "before": [
+          932
+        ],
+        "after": [
+          932
+        ]
+      }
+    },
+    "40": {
+      "n_gpu_layers": 40,
+      "label": "40",
+      "quant": "q4_0",
+      "repetitions": 3,
+      "pp_tps": 1811.48,
+      "pp_tps_stddev": 66.52,
+      "tg_tps": 63.48,
+      "tg_tps_stddev": 0.23,
+      "wall_time_s": 9.147,
+      "vram_mb": {
+        "peak": 932,
+        "before": [
+          932
+        ],
+        "after": [
+          932
+        ]
+      }
+    },
+    "full": {
+      "n_gpu_layers": -1,
+      "label": "full",
+      "quant": "q4_0",
+      "repetitions": 3,
+      "pp_tps": 1804.05,
+      "pp_tps_stddev": 59.53,
+      "tg_tps": 62.26,
+      "tg_tps_stddev": 0.09,
+      "wall_time_s": 9.259,
+      "vram_mb": {
+        "peak": 932,
+        "before": [
+          932
+        ],
+        "after": [
+          932
+        ]
+      }
+    }
+  }
+}

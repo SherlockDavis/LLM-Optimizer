@@ -1,0 +1,148 @@
+{
+  "experiment": "gpu_layers_comparison",
+  "timestamp": "2026-04-21 17:27:09",
+  "config": {
+    "quantization": "q4_0",
+    "prompt": "Explain the concept of attention mechanism in neural networks.",
+    "n_predict": 256,
+    "runs_per_config": 5
+  },
+  "results": {
+    "0": {
+      "n_gpu_layers": 0,
+      "label": "0",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    },
+    "20": {
+      "n_gpu_layers": 20,
+      "label": "20",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    },
+    "40": {
+      "n_gpu_layers": 40,
+      "label": "40",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    },
+    "full": {
+      "n_gpu_layers": -1,
+      "label": "full",
+      "runs": 5,
+      "tokens_per_second": {
+        "mean": null,
+        "stddev": 0,
+        "values": []
+      },
+      "wall_time_s": {
+        "mean": null,
+        "values": []
+      },
+      "vram_mb": {
+        "peak": 1613,
+        "samples": [
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ],
+          [
+            1613
+          ]
+        ]
+      }
+    }
+  }
+}
