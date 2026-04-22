@@ -27,4 +27,4 @@ env/
 Thumbs.db
 
 # ── 结果图表（可选：保留 JSON，不传 PNG）────────────────────────
-results/plots/
+# results/plots/  已开放，上传图表到 GitHub

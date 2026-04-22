@@ -109,13 +109,19 @@ python -m analysis.report_gen
 
 Q4_0 是 6 GB 显存环境下的最佳选择，TG 速度约 57 t/s，用户体验流畅。Q8_0 因体积（约 7.7 GB）超出显存，被迫回落 CPU 计算，TG 速度骤降至约 3 t/s。F16 约 14 GB 无法加载，测试结果为 N/A。
 
+![实验一：量化对比](results/plots/exp1_quantization.png)
+
 ### 实验二：GPU 层数对比
 
 全量 GPU 卸载相比纯 CPU（0 层），TG 速度提升约 5x（12 → 63 t/s）。层数从 0→20→40 呈阶梯式增长，40 层与 full 层结果几乎相同，说明该 7B 模型的计算量主要集中在前 40 个 transformer 层中。
 
+![实验二：GPU 层数对比](results/plots/exp2_gpu_layers.png)
+
 ### 实验三：上下文长度对比
 
 上下文从 512 增至 2048，TG 速度仅下降约 3%，非常稳定，说明 llama.cpp 的 KV Cache 机制在当前规模下表现良好。PP 速度下降约 16%，符合 Attention O(n²) 复杂度预期。
+
+![实验三：上下文长度对比](results/plots/exp3_context_len.png)
 
 ### 最佳推理配置
 
